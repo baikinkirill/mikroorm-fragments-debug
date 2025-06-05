@@ -50,11 +50,6 @@ async function main() {
   process.exit(0);
 }
 
-main().catch((err) => {
-  console.log(err);
-  process.exit(1);
-});
-
 function buildFilterQuery(): FilterQuery<BookSearchPrismaVirtualEntity> {
   const requiredTag = 'hit';
 
@@ -68,3 +63,8 @@ function buildFilterQuery(): FilterQuery<BookSearchPrismaVirtualEntity> {
   };
   return filter;
 }
+
+main().catch((err) => {
+  console.log(err);
+  process.exit(1);
+});
