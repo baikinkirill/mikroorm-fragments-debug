@@ -26,3 +26,5 @@ npm run migration:fresh
 npm run seeder:run
 npm run dev
 ```
+
+An example of our logic is described in the [src/index.ts](./src/index.ts) file. Please take a look. I left comments there.
