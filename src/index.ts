@@ -41,7 +41,7 @@ async function main() {
   */
   const total = await em.count(BookSearchPrismaVirtualEntity, filter);
   const books = await em.find(BookSearchPrismaVirtualEntity, filter, { fields: ['id'] });
-  const items = await em.find(BookRevisionEntity, { book: books });
+  const items = await em.find(BookRevisionEntity, { book: { id: { $in: books.map(it => it.id) } } });
 
   const response: SearchResponseDto = { total, items };
 

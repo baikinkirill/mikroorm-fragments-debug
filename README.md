@@ -1,6 +1,8 @@
 # MikroORM SQLite3 Project
 
-A TypeScript project configured with MikroORM and SQLite3 database.
+> An example of our logic is described in the [src/index.ts](./src/index.ts) file. Please take a look. I left comments there.
+
+A TypeScript project configured with MikroORM and SQLite3 database. 
 
 ## Getting Started
 
@@ -26,5 +28,3 @@ npm run migration:fresh
 npm run seeder:run
 npm run dev
 ```
-
-An example of our logic is described in the [src/index.ts](./src/index.ts) file. Please take a look. I left comments there.
